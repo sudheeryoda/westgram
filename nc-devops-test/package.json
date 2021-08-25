@@ -1,0 +1,31 @@
+{
+  "name": "nc-devops-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "`npm bin`/jest --force-exit --runInBand",
+    "migrate": "cd src && ../node_modules/.bin/sequelize db:migrate --config ./config/config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "base64url": "*",
+    "chai": "*",
+    "chai-http": "*",
+    "jest": "*",
+    "jsonwebtoken": "*"
+  },
+  "dependencies": {
+    "bcrypt": "*",
+    "body-parser": "^1.19.0",
+    "dotenv-safe": "*",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "passport": "^0.4.1",
+    "passport-http-bearer": "^1.0.1",
+    "pg": "*",
+    "sequelize": "*",
+    "sequelize-cli": "^6.2.0"
+  }
+}
